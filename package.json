@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/jest/bin/jest.js"
+    "test": "node ./node_modules/jest/bin/jest.js",
+    "server": "node ./lib/server.js"
   },
   "author": "Angel Alberto Díaz Cortés",
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.1.3"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }
