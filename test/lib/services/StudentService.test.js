@@ -11,13 +11,13 @@ describe("Prueba unitaria para la clase StudentService usando el JSON de 'visual
     });
     
     test('2) Consultar la cantidad de emails de todos los estudiantes que tengan certificación haveCertification', () => {
-        const getStudentHaveCertification = StudentService.getEmailOfStudentsByHaveCertification(getStudentsJsonPrueba);
+        const getStudentHaveCertification = StudentService.getEmailOfStudentsByHaveCertification(getStudentsVisualPartners);
 
         expect (getStudentHaveCertification.length).toBe(29);
     }); 
 
     test('3) Consultar la cantidad de estudiantes que tengan credits mayor a 500', () => {
-        const getStudentsCredits = StudentService.getStudentsByCredits(getStudentsJsonPrueba);
+        const getStudentsCredits = StudentService.getStudentsByCredits(getStudentsVisualPartners);
 
         expect (getStudentsCredits.length).toBe(27);
     }); 
